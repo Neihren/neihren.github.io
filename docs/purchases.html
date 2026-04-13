@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jessy DE BRITO">
+    <meta name="description" content="ECF Front - Formulaire demande d'achats">
+    <title>Demande d'achats</title>
+    <link rel="stylesheet" href="./css/purchases.css">
+    <script type="module" src="./scripts/script.js" defer></script>
+
+</head>
+
+<body>
+    <header class="title">
+        <h1>Formulaire de Demande d'Achats</h1>
+        <img src="img/logo-centre-de-readaptation-de-mulhouse-colors.svg" alt="Logo de l'entreprise">
+    </header>
+
+    <main>
+
+        <form class="purchase">
+            <fieldset>
+                <legend>Informations de l'émetteur de la demande</legend>
+                <label for="inputName">Nom :</label>
+                <input type="text" name="name" id="inputName" title="Saisir votre nom" required>
+                <label for="inputFirstname">Prénom :</label>
+                <input type="text" name="firstname" id="inputFirstname" title="Saisir votre prénom" required>
+                <label for="selectService">Service :</label>
+                <select name="service" id="selectService" title="Sélectionner votre service" required>
+                    <option value="">-- Choisir un service --</option>
+                    <option value="accounting">Comptabilité</option>
+                    <option value="hr">Ressources humaines</option>
+                    <option value="itservice">Service Informatique</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Détails de l'article demandé</legend>
+                <label for="inputProductName">Nom de l'article :</label>
+                <input type="text" name="productName" id="inputProductName" title="Saisir le nom de l'article" required>
+                <label for="textareaProductDesc">Description de l'article :</label>
+                <textarea name="productDesc" id="textareaProductDesc" rows="5"
+                    title="Saisir une courte description de l'article" required></textarea>
+                <label for="inputQty">Quantité : (min: 1, max: 1000)</label>
+                <input type="number" name="productQty" id="inputQty" min="1" max="1000" step="1"
+                    title="Saisir la quantité requise" required>
+                <label for="inputUnitPrice">Prix unitaire arrondi à l'Euro supérieur :</label>
+                <input type="number" name="unitPrice" id="inputUnitPrice" step="1"
+                    title="Saisir le prix unitaire de l'article" required>
+                <label for="inputDelivery">Date de livraison souhaitée :</label>
+                <input type="date" name="delivery" id="inputDelivery" title="Saisir la date de livraison souhaitée"
+                    required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Justification de la demande</legend>
+                <label for="textareaOrderReason">Expliquer la nécessité de l'achat :</label>
+                <textarea name="orderReason" id="textareaOrderReason" rows="5"
+                    title="Expliquer la nécéssité de cet achat" required></textarea>
+            </fieldset>
+            <button type="submit">Envoyer la demande</button>
+            <button type="reset">Annuler</button>
+        </form>
+    </main>
+
+    <footer class="info">
+        <h2>Informations Complémentaires</h2>
+        <p>Veuillez remplir ce formulaire avec précision. Toute demande incomplète sera ignorée sans notification.</p>
+        <p>Pour toute question, veuillez contacter le service des achats à l'adresse email suivante : <a
+                href="mailto:achats@example.com">achats@example.com</a></p>
+    </footer>
+</body>
+
+</html>
