@@ -16,7 +16,6 @@ PURCHASES CSS
     --crm-alert: #cf2d4f;
     --crm-warning: #f6af2e;
     --crm-success: #488287;
-    --button-hover: pink;
 }
 
 * {
@@ -47,7 +46,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   /* Vous pouvez modifier la police */
-    background-color: var(--light);   /* Vous pouvez changer la couleur de fond */
+    background-image: url("../img/nuage.webp") ;
     color: var(--light);   /* Vous pouvez changer la couleur du texte */
 }
 
@@ -138,5 +137,5 @@ button {
 }
 
 button:hover {
-    background-color: var(--button-hover);
+    background-color: var(--crm-ofp);
 }
