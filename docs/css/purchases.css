@@ -16,6 +16,7 @@ PURCHASES CSS
     --crm-alert: #cf2d4f;
     --crm-warning: #f6af2e;
     --crm-success: #488287;
+    --button-hover: pink;
 }
 
 * {
@@ -137,5 +138,5 @@ button {
 }
 
 button:hover {
-    background-color: var(--crm-ofp);
+    background-color: var(--button-hover);
 }
