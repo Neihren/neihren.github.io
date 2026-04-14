@@ -47,7 +47,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;   /* Vous pouvez modifier la police */
-    background-color: var(--light);   /* Vous pouvez changer la couleur de fond */
+    background-image: url(../img/nuage.png);
     color: var(--light);   /* Vous pouvez changer la couleur du texte */
 }
 
